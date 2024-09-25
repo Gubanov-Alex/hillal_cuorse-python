@@ -8,3 +8,5 @@ number_1= int (int(user_number)) // 10000
 back_number = (f'{number_5}{number_4}{number_3}{number_2}{number_1}')
 print(back_number)
 
+value_int= -1
+print(int(back_number))
