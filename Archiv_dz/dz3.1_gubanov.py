@@ -16,5 +16,3 @@ elif user_action != "*,/,+,-":
     result = "Types prohibited.\nPut a correct data for action!"
 
 print(result)
-
-
