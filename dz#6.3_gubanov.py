@@ -1,20 +1,16 @@
 from functools import reduce
 from operator import mul
 
-user_number = input("Input  number:")
+user_number = int(input("Input  number:"))
 
-a_sp = []                                  #Making a list for counting
-for letra in user_number:                  #Changing type for function
-        b_sp= int(letra)
-        a_sp.append(b_sp)
-result = reduce(mul, a_sp)                 #Function for result
+a_sp = []
 
-while result > 9:
-    result = str(result)
+while user_number > 9:
+    user_number = str(user_number)
     a_sp.clear()
-    for letra in result:
+    for letra in user_number:
         b_sp = int(letra)
         a_sp.append(b_sp)
-        result = reduce(mul, a_sp)
+        user_number = reduce(mul, a_sp)
 
-print(result)
+print(user_number)
