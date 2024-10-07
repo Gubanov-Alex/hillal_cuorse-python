@@ -1,4 +1,5 @@
-while True:
+active = True
+while active:
     user_choice = input("What action Bro?-choose 'Yes' or 'NO':").lower()
     if user_choice == 'yes' or user_choice == 'ye' or user_choice == 'y' :
         number1 = input("Enter a number '1': ")
@@ -20,7 +21,8 @@ while True:
         print(result)
 
     elif user_choice == "no" or user_choice == 'n' :
+        active = False
         print("Ostalavista Baby!")
-        break
+
     else:
         print("I'm just a calculator-Whatss'up@@?")
