@@ -1,4 +1,4 @@
-def add_one(some_list):
+def add_one(some_list: list)->list:
 
     numb_srch = int("".join(str(el) for el in some_list)) + 1
 
