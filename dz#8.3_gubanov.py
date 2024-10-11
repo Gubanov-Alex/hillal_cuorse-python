@@ -1,10 +1,20 @@
 def find_unique_value(some_list:list)->object:
-
-    for item in some_list:
+    a = set(some_list)
+    for item in a:
         if some_list.count(item) != 1:
             continue
         else:
             return item
+
+
+
+
+
+    # for item in some_list:
+    #     if some_list.count(item) != 1:
+    #         continue
+    #     else:
+    #         return item
 
 
 assert find_unique_value([1, 2, 1, 1]) == 2, 'Test1'
