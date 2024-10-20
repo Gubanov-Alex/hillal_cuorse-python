@@ -1,9 +1,17 @@
 import re
 
-def first_word(text):
-    """ Пошук першого слова """
-    text = re.search(r"\b[\w']+\b", text).group()
-    return text
+def first_word(text:str)->str:
+        """
+        Found first word in text.
+
+        :param text: Some text.
+        :type text: str.
+        :return: First word in text.
+        :rtype: str.
+        """
+
+        text = re.search(r"\b[\w']+\b", text).group()
+        return text
 
 
 assert first_word("Hello world") == "Hello", 'Test1'
