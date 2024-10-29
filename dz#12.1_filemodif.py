@@ -25,5 +25,5 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
 
 
 delete_html_tags(
-    'C:/Users/user/Desktop/course_hilal/pythonProject/hillal_cuorse-python/draft.html',
-    'C:/Users/user/Desktop/course_hilal/pythonProject/hillal_cuorse-python/draft_clean.txt')
+    'draft.html',
+    'draft_cleaned.txt')

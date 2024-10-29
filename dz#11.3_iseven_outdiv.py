@@ -1,3 +1,6 @@
+from math import inf
+
+
 def is_even(number:int)->bool:
     """
     Found number is even or not using a bitwise operation.
@@ -8,7 +11,10 @@ def is_even(number:int)->bool:
     :rtype: bool.
     """
 
-    return (number & 1) == 0   # using a bitwise 'AND' operation.
+    # return (number & 1) == 0   # using a bitwise 'AND' operation.
+    if number == 0:
+        return False
+    return str(number).endswith(('0', '2', '4', '6', '8'))
 
 assert is_even(2494563894038**2) == True, 'Test1'
 assert is_even(1056897**2) == False, 'Test2'
