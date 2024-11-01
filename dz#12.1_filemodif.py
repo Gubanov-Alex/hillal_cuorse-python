@@ -25,5 +25,5 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
 
 
 delete_html_tags(
-    'draft.html',
+    'Archiv_dz/draft.html',
     'draft_cleaned.txt')
