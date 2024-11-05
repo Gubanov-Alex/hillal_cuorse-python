@@ -70,12 +70,12 @@ class Group:
         if student:
             self.group.remove(student)
 
-    # def find_student(self, last_name,record_book):
-    #     """Checking for student in group"""
-    #     for student in self.group:
-    #         if student.last_name == last_name and student.record_book == record_book:
-    #             return student
-    #     return None
+    def find_student(self, last_name,record_book):
+        """Checking for student in group"""
+        for student in self.group:
+            if student.last_name == last_name and student.record_book == record_book:
+                return student
+        return None
 
     def __str__(self):
         all_students = '\n'.join(str(student) for student in self.group)
